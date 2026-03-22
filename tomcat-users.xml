@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Add these lines inside your existing <tomcat-users> block
+  located at: $TOMCAT_HOME/conf/tomcat-users.xml
+  Then restart Tomcat.
+-->
+<tomcat-users>
+    <role rolename="manager-gui"/>
+    <role rolename="manager-script"/>
+    <user username="jenkins"
+          password="jenkins123"
+          roles="manager-gui,manager-script"/>
+</tomcat-users>
